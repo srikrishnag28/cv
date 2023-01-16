@@ -1,0 +1,118 @@
+body{
+    text-align: center;
+    margin: 0;
+}
+.programmer{
+    width: 25rem;
+}
+.container-1{
+    background-color: #579BB1;
+    padding-top: 100px;
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+    font-size: 28px;
+    color: #E1D7C6;
+    padding-bottom: 50px;
+}
+.top-cloud{
+    color: #579BB1;
+    position: absolute;
+    top: 50px;
+    right: 10rem;
+}
+.bottom-cloud{
+    position: absolute;
+    left: 10rem;
+}
+.container-2{
+    outline-width: 10px;;
+    font-size: 20px;
+    font-family: Helvetica;
+    background-color: white;
+    color: #579BB1;
+}
+.myinfo{
+    font-family: Garamond;
+    color: #434242;
+    margin: 0 25% 0 25%;
+    font-size: 25px;
+}
+::selection{
+    color: black;
+}
+hr{
+    border-style: none;
+    border-top-style: dotted;
+    width: 7%;
+    border-width: 5px;
+    margin: 50px auto;
+}
+table, tr, td{
+    font-size: 25px;
+    font-family: Garamond;
+    color: #434242;
+    padding: 10px;
+    text-align: left;
+    margin: 0 10rem 0 23rem;
+}
+table{
+    align-items: center;
+    margin: 0 25% 0 25%;
+
+}
+tr, td{
+    font-size: 25px;
+    font-family: Garamond;
+    border-width: 30rem;
+    width: 100%;
+}
+td{
+    font-size: 25px;
+    font-family: Garamond;
+    padding-right: 4rem;
+    width: fit-content;
+}
+a:link, a:visited{
+    color: #434242;
+    text-decoration: none;
+}
+a:hover{
+    color: #579BB1;
+}
+span{
+    font-size: 25px;
+    font-family: Garamond;
+    border: 1px solid #579BB1;
+    padding: 5px 10px;
+    border-radius: 9px;
+    margin: 0 40px;
+}
+.link:link, .link:visited{
+    font-size: 25px;
+    font-family: Garamond;
+    border: 1px solid #434242;
+    margin: 20px 30px 0 30px;
+    padding: 5px 10px;
+    border-radius: 9px;
+    background-color: white;
+    color: #434242;
+    display: inline-block;
+}
+.link:hover{
+    font-size: 25px;
+    font-family: Garamond;
+    background-color: #579BB1;
+    color: white;
+}
+.my{
+    color: #434242;
+    font-size: 25px;
+    font-family: Garamond;
+}
+.container-3{
+    font-size: 25px;
+    font-family: Garamond;
+    background-color: #579BB1;
+    height: 100px;
+    width: 100;
+}

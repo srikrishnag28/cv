@@ -151,8 +151,7 @@
 
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
-        <form name="contact" method="POST" data-netlify="true" onSubmit="submit"  data-netlify-honeypot="bot-field">
-            <input class="d-none" name="bot-field">
+        <form name="contact" method="POST" data-netlify="true" onSubmit="submit" data-netlify-recaptcha="true">
             <div class="input-box">
                 <label for="full-name" class="visually-hidden">Full Name</label>
                 <input type="text" name="full-name" placeholder="Full Name" required id="full-name">
@@ -169,6 +168,7 @@
                 <label for="message" class="visually-hidden">Message</label>
                 <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
             </div>
+               <div data-netlify-recaptcha="true"></div>
             <input type="submit" value="Send Message" class="btn">
         </form>        
     </section>

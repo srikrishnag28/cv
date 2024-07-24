@@ -151,19 +151,25 @@
 
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
-        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-            <input type="hidden" name="form-name" value="contact">
+        <form name="contact" method="POST" data-netlify="true" onSubmit="submit">
             <div class="input-box">
-                <input type="text" name="full-name" placeholder="Full Name" required>
-                <input type="email" name="email" placeholder="Email Address" required>
+                <label for="full-name" class="visually-hidden">Full Name</label>
+                <input type="text" name="full-name" placeholder="Full Name" required id="full-name">
+                <label for="email" class="visually-hidden">Email</label>
+                <input type="email" name="email" placeholder="Email Address" required id="email">
             </div>
             <div class="input-box">
-                <input type="tel" name="mobile-number" placeholder="Mobile Number (Optional)">
-                <input type="text" name="email-subject" placeholder="Email Subject" required>
+                <label for="mobile-number" class="visually-hidden">Mobile Number</label>
+                <input type="tel" name="mobile-number" placeholder="Mobile Number (Optional)" id="mobile-number">
+                <label for="subject" class="visually-hidden">Subject</label>
+                <input type="text" name="email-subject" placeholder="Email Subject" required id="subject">
             </div>
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <div class="input-box">
+                <label for="message" class="visually-hidden">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            </div>
             <input type="submit" value="Send Message" class="btn">
-        </form>
+        </form>        
     </section>
     
 

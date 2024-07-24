@@ -628,6 +628,12 @@ span {
     border: 0;
 }
 
+.recaptcha-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px; /* Adjust as needed */
+}
+
 .footer {
     display: flex;
     justify-content: space-between;

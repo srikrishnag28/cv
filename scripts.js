@@ -46,11 +46,26 @@ const handleSubmit = (event) => {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     })
-      .then(() => alert("Thank you for your submission"))
-      .catch((error) => alert(error));
-  };
-  
-  document
-    .querySelector("form")
-    .addEventListener("submit", handleSubmit);
+      .then(() => {
+        Swal.fire({
+          title: 'Success!',
+          text: 'Thank you for your submission',
+          icon: 'success',
+          confirmButtonText: 'OK'
+        });
+      })
+      .catch((error) => {
+        Swal.fire({
+          title: 'Error!',
+          text: 'Something went wrong. Please try again later.',
+          icon: 'error',
+          confirmButtonText: 'OK'
+        });
+      });
+};
+
+document
+  .querySelector("form")
+  .addEventListener("submit", handleSubmit);
+
   
